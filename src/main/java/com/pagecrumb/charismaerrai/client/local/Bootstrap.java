@@ -25,7 +25,7 @@ import org.jboss.errai.ioc.client.api.EntryPoint;
 import org.jboss.errai.ui.nav.client.local.Navigation;
 import org.jboss.errai.ui.shared.api.annotations.DataField;
 import org.jboss.errai.ui.shared.api.annotations.Templated;
-import org.timepedia.exporter.client.ExporterUtil;
+//import org.timepedia.exporter.client.ExporterUtil;
 
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -64,7 +64,7 @@ public class Bootstrap extends Composite
     @PostConstruct
     public void buildUI()
     {
-    	ExporterUtil.exportAll();
+    	//ExporterUtil.exportAll();
     	content.add(navigation.getContentPanel());
         RootPanel.get("rootPanel").add(this);
     }
